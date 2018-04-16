@@ -19,17 +19,7 @@ a:link, a:visited, a:active {
 a:hover {
 	color: red;
 }
-a.navlinks {
-	text-decoration: none;
-	font-size: larger;
-	font-weight: bold;
-	font-family: Verdana, Geneva, sans-serif;
-}
-#navtable {
- 	margin-left: auto;
- 	margin-right: auto;
-}
-th, td {
+ th, td {
 	column-width: auto;
 	column-count: 1;
 	padding: 5px;
@@ -52,11 +42,12 @@ a.bannerlinks {
 }
 
 
-h1 {
+h3 {
 	font-family: Verdana, Geneva, sans-serif;
 	color: #7b111b;
 	font-size: 75px;
 	padding-top: 30px;
+	font-size: large;
 }
 .container {
 	max-width: 95%;
@@ -84,4 +75,15 @@ h1 {
 	background: rgba(255, 255, 255, .60);
 	padding: 10px;
 	flex: 1;
+}
+
+a.navlinks {
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#navtable {
+ 	margin-left: auto;
+ 	margin-right: auto;
 }
