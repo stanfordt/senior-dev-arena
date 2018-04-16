@@ -87,3 +87,19 @@ a.navlinks {
  	margin-left: auto;
  	margin-right: auto;
 }
+
+
+.fight {
+	padding: 10px;
+	width: 94%;
+	border-radius: 8px;
+	background-color: white;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	white-space: nowrap;
+	background: rgba(255, 255, 255, .60);
+	max-width: 94%;
+
+}
