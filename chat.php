@@ -1,3 +1,8 @@
+<?php
+
+	session_start();
+
+?>
 
 <html>
 
@@ -15,7 +20,7 @@
 		<div class="banner2">
 			
 			<h3>Welcome,</h3>
-			<a class="bannerlinks" href="profile.html" title="Your profile">xxEdgyUserNamexx</a>
+			<?php echo $_SESSION["Username"]; ?> (<a href="logout.php" title="Logout">Logout</a>)
 
 		</div>
 
@@ -25,28 +30,34 @@
 			<table id="navtable">
 				<tr>
 					<td>
-						<a class="navlinks" href="character.html" title="My Character">Character</a>
+						<a class="navlinks" href="character.php" title="My Character">Character</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a class="navlinks" href="fight.html" title="Fight Now" target="_blank" rel="noopener noreferrer">Fight</a>
+						<a class="navlinks" href="fight.php" title="Fight Now">Fight</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a class="navlinks" href="chat.html" title="Chat">Chat</a>
+						<a class="navlinks" href="chat.php" title="Chat">Chat</a>
 					</td>
 				</tr>
-				<tr>
-					<td>
-						<a class="navlinks" href="mod.html" title="">Moderation</a>
-					</td>
-				</tr>				
+				<?php
+					if($_SESSION["UserLevel"] >= 1){
+						echo "
+						<tr>
+							<td>
+								<a class=\"navlinks\" href=\"mod.php\" title=\"\">Moderation</a>
+							</td>
+						</tr>
+						";
+					}
+				?>			
 			</table>
 		</div>
 		<div class="content">
-			<h2>This is the chat page.</h2>
+			<h2>Under construction</h2>
 			<!-- It is probably in our best interest to find some sort of chat plugin that we can just host on the server locally and pull the usernames from the DB automatically -->
 		</div>
     </div>
